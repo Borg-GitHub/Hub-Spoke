@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUserName": {
+            "value": "MasterUser"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "windowsVMCount": {
+            "value": 1
+        },
+        "linuxVMCount": {
+            "value": 1
+        },
+        "vmSize": {
+            "value": "Standard_A1_v2"
+        },
+        "deployVpnGateway": {
+            "value": true
+        },
+        "hubNetwork": {
+            "value": {
+                "name": "vnet-hub",
+                "addressPrefix": "10.0.0.0/20"
+            }
+        },
+        "spokeNetwork": {
+            "value": {
+                "name": "vnet-spoke-one",
+                "addressPrefix": "10.100.0.0/16",
+                "subnetName": "snet-spoke-resources",
+                "subnetPrefix": "10.100.0.0/16",
+                "subnetNsgName": "nsg-spoke-one-resources"
+            }
+        },
+        "spokeNetworkTwo": {
+            "value": {
+                "name": "vnet-spoke-two",
+                "addressPrefix": "10.200.0.0/16",
+                "subnetName": "snet-spoke-resources",
+                "subnetPrefix": "10.200.0.0/16",
+                "subnetNsgName": "nsg-spoke-two-resources"
+            }
+        },
+        "vpnGateway": {
+            "value": {
+                "name": "vgw-gateway",
+                "subnetName": "GatewaySubnet",
+                "subnetPrefix": "10.0.2.0/27",
+                "pipName": "pip-vgw-gateway"
+            }
+        },
+        "bastionHost": {
+            "value": {
+                "name": "AzureBastionHost",
+                "publicIPAddressName": "pip-bastion",
+                "subnetName": "AzureBastionSubnet",
+                "nsgName": "nsg-hub-bastion",
+                "subnetPrefix": "10.0.1.0/29"
+            }
+        },
+        "azureFirewall": {
+            "value": {
+                "name": "AzureFirewall",
+                "publicIPAddressName": "pip-firewall",
+                "subnetName": "AzureFirewallSubnet",
+                "subnetPrefix": "10.0.3.0/26",
+                "routeName": "r-nexthop-to-fw"
+            }
+        },
+        "workbookDisplayName": {
+            "value": "Azure Firewall Workbook"
+        },
+        "workbookId": {
+            "value": "7367bc4a-1226-5d54-93f5-882341f81926"
+        },
+        "location": {
+            "value": "eastus"
+        }
+    }
+}
