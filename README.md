@@ -2,4 +2,4 @@
 
 dfsdfasdfasd
 
-<img src="Hub-Spoke/hub-spoke.png" />
+<img src=Hub-Spoke/hub-spoke.png>
