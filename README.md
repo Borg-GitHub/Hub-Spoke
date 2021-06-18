@@ -7,7 +7,7 @@ dfsdfasdfasd
 
 Use the Deploy to Azure button below. Note that the template will take about 2 hour to fully deploy.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmattfeltonma%2Fazure-labs%2Fmaster%2Fsimple-landing-zone%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBorg-GitHub%2FHub-Spoke%2Fmain%2FTemplates%2Ftemplate.json)
 
 **The template allows for the following parameters**
 * sharedServicesSubId - The subscription id of the subscription to deploy the Shared Services resources to
