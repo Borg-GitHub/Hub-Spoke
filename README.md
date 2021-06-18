@@ -4,8 +4,14 @@ This automation builds a hub-spoke topology in Azure. The hub virtual network ac
 
 The benefits of using a hub and spoke configuration include cost savings, overcoming subscription limits, and workload isolation.
 
+<br />
+<br />
 
 <img src=hub-spoke.png>
+
+<br />
+<br />
+
 
 
 # Architecture
@@ -24,6 +30,9 @@ Azure Firewall: Azure Firewall is a managed firewall as a service. The Firewall 
 VPN virtual network gateway or ExpressRoute gateway. The virtual network gateway enables the virtual network to connect to the VPN device, or ExpressRoute circuit, used for connectivity with your on-premises network. For more information, see Connect an on-premises network to a Microsoft Azure virtual network.
 
 VPN device. A device or service that provides external connectivity to the on-premises network. The VPN device may be a hardware device or a software solution such as the Routing and Remote Access Service (RRAS) in Windows Server 2012. For more information, see About VPN devices for Site-to-Site VPN Gateway connections.
+
+<br />
+
 
 ## Installation
 
