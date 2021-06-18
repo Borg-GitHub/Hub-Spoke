@@ -5,6 +5,9 @@ This automation builds a hub-spoke topology in Azure. The hub virtual network ac
 The benefits of using a hub and spoke configuration include cost savings, overcoming subscription limits, and workload isolation.
 
 
+<img src=hub-spoke.png>
+
+
 # Architecture
 The architecture consists of the following components.
 
