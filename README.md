@@ -42,20 +42,20 @@ Use the Deploy to Azure button below.
 
 **The template allows for the following parameters**
 * adminUserName  - The username for the local administrators of the two virtual machines provisioned. 
-* adminPassword - 
-* windowsVMCount -
-* linuxVMCount -
-* vmSize -
-* deployVpnGateway -
-* hubNetwork -
-* spokeNetwork -
-* spokeNetworkTwo -
-* vpnGateway -
-* bastionHost -
-* azureFirewall -
-* workbookDisplayName -
-* workbookId -
-* location -
+* adminPassword -  The password for the local administrators of the two virtual machines provisioned.
+* windowsVMCount - Number of Windows VMs to deploy
+* linuxVMCount -  Number of Linux VMs to deploy
+* vmSize -    Azure Virtual Machine SKU to use 
+* deployVpnGateway -  Do you wish to deploy a VPN gateway  Y\N
+* hubNetwork -  Hub name and IP range 
+* spokeNetwork - Spoke name, IP range, and NSG name
+* spokeNetworkTwo -  Second spoke name, IP range, and NSG name
+* vpnGateway - VPN Gateway name, IP range, and public IP address interface name
+* bastionHost - Bastion host name, IP range, public IP address interface name and NSG name
+* azureFirewall - Azure firewall, IP range, public IP address interface name and name of user defined route 
+* workbookDisplayName -  Take the default 
+* workbookId -  Take the default 
+* location -  Choose an Azure datacenter location for your deployement 
 
 
 
